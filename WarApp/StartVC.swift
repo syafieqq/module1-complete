@@ -10,21 +10,45 @@ import UIKit
 
 class StartVC: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var submitButton: UIButton!
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBAction func submitButtonDidTapped(_ sender: UIButton) {
+        //print ("Hello World")
+        
     }
     
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if nameTextField.text != "" {
 
-    /*
-    // MARK: - Navigation
+            return true
+        } else {
+            let alert = UIAlertController(title: "Wooops!", message: "Dont forget to fill out your name!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return false
+        }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
+
+    
+    
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let viewcontroller = segue.destination as! GameVC
+        viewcontroller.playerName = nameTextField.text!
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        submitButton.layer.cornerRadius = 23
+        submitButton.clipsToBounds = true
+        
+
+    }
+    
+    
 
 }

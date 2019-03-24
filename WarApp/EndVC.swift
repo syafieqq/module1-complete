@@ -7,24 +7,25 @@
 //
 
 import UIKit
+import Lottie
 
 class EndVC: UIViewController {
 
+//    @IBOutlet weak var test: LOTAnimatedControl!
+    var playername = ""
+    @IBOutlet weak var winnerLabel: UILabel!
+    
+    @IBOutlet weak var buttonEnd: UIButton!
+    @IBOutlet weak var frameWinner: UIView!
     override func viewDidLoad() {
-        super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        frameWinner.clipsToBounds = true
+        frameWinner.layer.cornerRadius = 10
+        buttonEnd.layer.cornerRadius = 23
+        buttonEnd.clipsToBounds = true
+        winnerLabel.text = playername
+
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

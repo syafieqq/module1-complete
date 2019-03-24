@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8291EFF5D1EB24E27F2BC5C1 /* Pods_WarApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CEABAC5155360A18DCB6A01 /* Pods_WarApp.framework */; };
 		A521F9FA2240CA6200FA3B8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A521F9F92240CA6200FA3B8C /* AppDelegate.swift */; };
-		A521F9FC2240CA6200FA3B8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A521F9FB2240CA6200FA3B8C /* ViewController.swift */; };
 		A521F9FF2240CA6200FA3B8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A521F9FD2240CA6200FA3B8C /* Main.storyboard */; };
 		A521FA012240CA6500FA3B8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A521FA002240CA6500FA3B8C /* Assets.xcassets */; };
 		A521FA042240CA6500FA3B8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A521FA022240CA6500FA3B8C /* LaunchScreen.storyboard */; };
+		A527F788224367F50092D7E8 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A527F787224367F50092D7E8 /* StartVC.swift */; };
+		A527F78A2243680E0092D7E8 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A527F7892243680E0092D7E8 /* GameVC.swift */; };
+		A527F78C2243681B0092D7E8 /* EndVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A527F78B2243681B0092D7E8 /* EndVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CEABAC5155360A18DCB6A01 /* Pods_WarApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WarApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78D3843AE020B1B8CB93661F /* Pods-WarApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarApp.debug.xcconfig"; path = "Target Support Files/Pods-WarApp/Pods-WarApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A521F9F62240CA6200FA3B8C /* WarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A521F9F92240CA6200FA3B8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A521F9FB2240CA6200FA3B8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A521F9FE2240CA6200FA3B8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A521FA002240CA6500FA3B8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A521FA032240CA6500FA3B8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A521FA052240CA6500FA3B8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A527F787224367F50092D7E8 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		A527F7892243680E0092D7E8 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		A527F78B2243681B0092D7E8 /* EndVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndVC.swift; sourceTree = "<group>"; };
+		C354C2416FF25748EAA84DCA /* Pods-WarApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarApp.release.xcconfig"; path = "Target Support Files/Pods-WarApp/Pods-WarApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8291EFF5D1EB24E27F2BC5C1 /* Pods_WarApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CE87FA50434BCF9BC035F72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CEABAC5155360A18DCB6A01 /* Pods_WarApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A521F9ED2240CA6200FA3B8C = {
 			isa = PBXGroup;
 			children = (
 				A521F9F82240CA6200FA3B8C /* WarApp */,
 				A521F9F72240CA6200FA3B8C /* Products */,
+				A7CF59025D640DEC4A461AA6 /* Pods */,
+				2CE87FA50434BCF9BC035F72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +74,24 @@
 			isa = PBXGroup;
 			children = (
 				A521F9F92240CA6200FA3B8C /* AppDelegate.swift */,
-				A521F9FB2240CA6200FA3B8C /* ViewController.swift */,
+				A527F787224367F50092D7E8 /* StartVC.swift */,
+				A527F7892243680E0092D7E8 /* GameVC.swift */,
+				A527F78B2243681B0092D7E8 /* EndVC.swift */,
 				A521F9FD2240CA6200FA3B8C /* Main.storyboard */,
 				A521FA002240CA6500FA3B8C /* Assets.xcassets */,
 				A521FA022240CA6500FA3B8C /* LaunchScreen.storyboard */,
 				A521FA052240CA6500FA3B8C /* Info.plist */,
 			);
 			path = WarApp;
+			sourceTree = "<group>";
+		};
+		A7CF59025D640DEC4A461AA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78D3843AE020B1B8CB93661F /* Pods-WarApp.debug.xcconfig */,
+				C354C2416FF25748EAA84DCA /* Pods-WarApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A521FA082240CA6500FA3B8C /* Build configuration list for PBXNativeTarget "WarApp" */;
 			buildPhases = (
+				2C19ED7571A149B62D049CC0 /* [CP] Check Pods Manifest.lock */,
 				A521F9F22240CA6200FA3B8C /* Sources */,
 				A521F9F32240CA6200FA3B8C /* Frameworks */,
 				A521F9F42240CA6200FA3B8C /* Resources */,
+				75D422F32CCE7E0008897C6B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +162,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C19ED7571A149B62D049CC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WarApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75D422F32CCE7E0008897C6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WarApp/Pods-WarApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WarApp/Pods-WarApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A521F9F22240CA6200FA3B8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A521F9FC2240CA6200FA3B8C /* ViewController.swift in Sources */,
 				A521F9FA2240CA6200FA3B8C /* AppDelegate.swift in Sources */,
+				A527F78A2243680E0092D7E8 /* GameVC.swift in Sources */,
+				A527F78C2243681B0092D7E8 /* EndVC.swift in Sources */,
+				A527F788224367F50092D7E8 /* StartVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,15 +361,18 @@
 		};
 		A521FA092240CA6500FA3B8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78D3843AE020B1B8CB93661F /* Pods-WarApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WarApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = firstapp.cl.WarApp;
+				PRODUCT_BUNDLE_IDENTIFIER = firstapp.cl.WarAppv2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,15 +381,18 @@
 		};
 		A521FA0A2240CA6500FA3B8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C354C2416FF25748EAA84DCA /* Pods-WarApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WarApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = firstapp.cl.WarApp;
+				PRODUCT_BUNDLE_IDENTIFIER = firstapp.cl.WarAppv2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
